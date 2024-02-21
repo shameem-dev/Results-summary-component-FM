@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--FF);
+}
+:root {
+    /* Colors */
+    --Light-red: hsla(0, 100%, 67%, 0.25);
+    --Orangey-yellow: hsla(39, 100%, 56%, 0.257);
+    --Green-teal: hsla(166, 100%, 37%, 0.25);
+    --Cobalt-blue: hsla(234, 85%, 45%, 0.25);
+
+    /*-------Gradients---------*/
+    /* (background) */
+    --Light-slate-blue : hsl(252, 100%, 67%);
+    --Light-royal-blue : hsl(241, 81%, 54%);
+    /* (circle) */
+    --Violet-blue : hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Fonts */
+    --FF : "Hanken Grotesk", sans-serif;
+
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 6rem ;
+    max-width: 800px;
+    box-shadow: 10px 10px 20px 5px rgba(172, 166, 166, 0.2);
+    transition:  2s box-shadow;
+    
+
+}
+.result {
+    background:linear-gradient(var(--Light-slate-blue),var(--Light-royal-blue));
+    padding: 2rem 4.2rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.result h3 {
+    font-weight: 600;
+    color: var(--White);
+    text-align: center;
+}
+.score {
+    width: 120px;
+    height: 120px;
+    background :linear-gradient(var(--Violet-blue),var(--Persian-blue));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: var(--White);
+}
+.degree {
+    
+    font-weight: 900;
+    font-size: 45px;
+
+}
+.score span {
+    margin-top: -10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+
+}
+.aperciate {
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aperciate .great {
+    padding-bottom: 12px;
+    font-size: larger;
+    font-weight: 700;
+} 
+.aperciate .p {
+    font-size: 12px;
+    text-align: center;
+}
+.summary {
+    padding: 15px 24px 8px ;
+
+}
+.summary h3 {
+    color: var(--Dark-gray-blue);
+    text-align: left;
+    padding-bottom: -12px;
+    font-weight: 800;
+}
+.summary-items ul li{
+    list-style-type: none;
+    width: 280px;
+    padding: 12px ;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.summary-items ul li img {
+    margin-right: -100px;
+}
+
+.summary-items ul li:first-child {
+    background-color: var(--Light-red);
+    color: hsl(0, 100%, 67%);
+}
+.summary-items ul li:nth-child(2) {
+    background-color: var(--Orangey-yellow);
+    color: hsl(39, 100%, 56%);
+}
+.summary-items ul li:nth-child(3) {
+    background-color: var(--Green-teal);
+    color: hsl(166, 100%, 37%);
+
+}
+.summary-items ul li:nth-child(3) img,.summary-items ul li:nth-child(4) img {
+    margin-right: -110px;
+}
+.summary-items ul li:nth-child(4) {
+    background-color: var(--Cobalt-blue);
+    color: hsl(234, 85%, 45%);
+    margin-bottom: 24px;
+
+}
+
+.summary-items ul li span {
+    color: #000;
+}
+strong {
+    font-weight: 900;
+}
+.continue-link a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--Dark-gray-blue);
+    padding: 10px 99px;
+    color: var(--White);
+    margin-left: 10px;
+    border-radius: 24px;
+    
+}
+
+
+@media screen and (max-width: 375px) {
+    .card  {
+        display: flex;
+        flex-direction: column;
+    }
+  }
